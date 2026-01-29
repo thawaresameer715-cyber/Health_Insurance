@@ -6,7 +6,7 @@ pipeline{
   stages{
     stage('Hello'){
           steps{
-              echo'hello SameerThaware ...............'
+              echo'hello SameerThaware xxxxxxxxxxxxxxxxx'
           }
     }
   }
