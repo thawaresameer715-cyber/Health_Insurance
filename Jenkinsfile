@@ -12,7 +12,13 @@ pipeline{
     stage('Docker Build'){
           steps{
               echo'Docker building stage'
-              //sh 'docker build -t '
+              sh 'docker build  -t insurance:latest .'
+          }
+    }
+    stage('Docker Run'){
+          steps{
+              echo'Docker building stage'
+              sh 'docker run -td -p 8000:8000 insurance:latest '
           }
     }
   }
