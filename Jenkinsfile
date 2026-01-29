@@ -9,5 +9,11 @@ pipeline{
               echo'hello SameerThaware xxxxxxxxxxxxxxxxx'
           }
     }
+    stage('Docker Build'){
+          steps{
+              echo'Docker building stage'
+              //sh 'docker build -t '
+          }
+    }
   }
 }
