@@ -12,7 +12,7 @@ pipeline{
     stage('Docker Build'){
           steps{
               echo'Docker building stage'
-             dir('Frontrnd'){
+             dir('Frontend'){
                   sh 'docker build -t insurance:latest .' 
              }
           }
