@@ -13,14 +13,14 @@ pipeline{
           steps{
               echo'Docker building stage'
              dir('Frontend'){
-                  sh 'docker build -t insurance:latest .' 
+                  sh 'docker build -t insurance:a1 .' 
              }
           }
     }
     stage('Docker Run'){
           steps{
               echo'Docker building stage'
-              sh 'docker run -td -p 8000:8000 insurance:latest '
+              sh 'docker run -td -p 3000:3000 insurance:latest '
           }
     }
   }
